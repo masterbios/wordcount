@@ -1,0 +1,11 @@
+<a href="{% url 'homepage' %}"> start again </a>
+
+<h1>There are {{count}} words</h1>
+{{fulltext}}
+
+
+ <h3> Word count </h3>
+ {% for key , value in val %}
+ {{key}} &nbsp; {{value}}
+ <br>
+ {% endfor %}
